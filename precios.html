@@ -1063,7 +1063,10 @@ document.querySelectorAll(".media > video").forEach(video => {
   const fail = () => video.parentElement.classList.add("is-missing");
   sources[sources.length - 1].addEventListener("error", fail);
   video.addEventListener("error", fail);
-  if (video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) fail();
+  video.addEventListener("loadeddata", () => video.parentElement.classList.remove("is-missing"));
+  // Recién creado, el video pasa un instante por NETWORK_NO_SOURCE mientras elige su fuente:
+  // se revisa después, para no marcar como faltante un video que sí existe
+  setTimeout(() => { if (video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) fail(); }, 1000);
 });
 
 /* Video de YouTube del club: se carga recién al tocar "play" (sin cookies hasta entonces) */
