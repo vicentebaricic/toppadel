@@ -742,11 +742,12 @@ p{margin:0}
     <div class="hero__frame reveal" data-delay="1">
   <div class="hero__media">
     <picture>
-      <img src="assets/video/compite-poster.jpg" alt="" width="1920" height="1080" fetchpriority="high">
+      <source media="(max-aspect-ratio: 4/5)" srcset="assets/video/hero-mobile-poster.jpg">
+      <img src="assets/video/hero-poster.jpg" alt="" width="1920" height="1080" fetchpriority="high">
     </picture>
     <!-- Las fuentes las elige el script: versión vertical en pantallas verticales -->
     <video class="js-hero-video" muted loop playsinline preload="none" aria-hidden="true"
-      data-src-wide="assets/video/compite"></video>
+      data-src-wide="assets/video/hero" data-src-tall="assets/video/hero-mobile"></video>
   </div>
   <span class="sample sample--dark hero__sample">Video de ejemplo</span>
   <button class="icon-btn hero__pause" type="button" aria-pressed="false" aria-label="Pausar video de fondo">

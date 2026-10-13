@@ -51,9 +51,11 @@ horarios:
   5: 08:00 – 23:00
   6: 08:00 – 22:00
 
-hero:                                  # sin video propio todavía: video común de la plantilla
-  poster: assets/video/compite-poster.jpg
-  video: assets/video/compite
+hero:                                  # video común del héroe (el de siempre): reemplazar por video propio del club
+  video: assets/video/hero                  # usa hero.webm y hero.mp4
+  video_vertical: assets/video/hero-mobile  # versión 9:16 para celulares
+  poster: assets/video/hero-poster.jpg
+  poster_vertical: assets/video/hero-mobile-poster.jpg
   muestra: Video de ejemplo
 
 dato_hero:
