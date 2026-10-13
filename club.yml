@@ -1,0 +1,130 @@
+# =====================================================================
+#  TOP PADEL — Chicureo
+#  Generar:  python3 build.py ../toppadel/club.yml   (desde plantilla-padel)
+#  Todo lo marcado con "muestra" es CONTENIDO DE EJEMPLO: reemplazar
+#  cuando el club mande sus datos reales (fotos, equipo, precios…).
+# =====================================================================
+
+nombre: Top Padel
+slug: toppadel
+salida: .
+
+seo:
+  titulo: Top Padel · Club de pádel en Chicureo
+  descripcion: Club de pádel en Chicureo. Reserva tu cancha por WhatsApp, clases por nivel y partidos todas las semanas.
+  imagen: assets/marca/og.jpg
+
+marca:
+  logo: assets/marca/logo.png          # wordmark "TOP PADEL" sin fondo (se pinta con el color del tema)
+  logo_ancho: 1130
+  logo_alto: 530
+  favicon: assets/marca/favicon.png    # monograma TP
+  apple_icon: assets/marca/apple-touch-icon.png
+
+contacto:
+  whatsapp: "56957799800"
+  whatsapp_visible: +56 9 5779 9800
+  reservas:                            # las reservas son por WhatsApp
+    nombre: WhatsApp
+    url: "https://wa.me/56957799800?text=Hola%20Top%20Padel%2C%20quiero%20reservar%20una%20cancha."
+  instagram: https://www.instagram.com/toppadelchicureo/
+  facebook: ""
+
+ubicacion:
+  barrio: Chicureo
+  zona: Colina · Santiago
+  comuna: Colina
+  direccion: Chicureo, Colina
+  referencia: Escríbenos por WhatsApp y te enviamos la ubicación exacta.
+  direccion_corta: Chicureo, Colina
+  direccion_completa: Chicureo, Colina, Región Metropolitana
+  mapa: Top Padel Chicureo, Colina, Chile
+  muestra: Dirección exacta por confirmar
+
+horarios_muestra: true
+horarios:
+  0: 09:00 – 21:00
+  1: 08:00 – 23:00
+  2: 08:00 – 23:00
+  3: 08:00 – 23:00
+  4: 08:00 – 23:00
+  5: 08:00 – 23:00
+  6: 08:00 – 22:00
+
+hero:                                  # video común del héroe (el de siempre): reemplazar por video propio del club
+  video: assets/video/hero                  # usa hero.webm y hero.mp4
+  video_vertical: assets/video/hero-mobile  # versión 9:16 para celulares
+  poster: assets/video/hero-poster.jpg
+  poster_vertical: assets/video/hero-mobile-poster.jpg
+  muestra: Video de ejemplo
+
+dato_hero:
+  numero: "6"
+  texto: "canchas en<br>Chicureo"
+  muestra: true
+
+# Video del club en YouTube, bajo la sección "El club"
+club_video:
+  youtube: mAxTzBWiSZg
+  titulo: Conoce Top Padel
+  texto: Así se vive el club en Chicureo.
+
+metodo:
+  nombre: Método Top
+  titulo_html: "Método <em>Top.</em>"
+  foto: assets/video/compite-poster.jpg
+  foto_alt: Cancha de pádel azul vista desde arriba
+  muestra: true
+
+garantia:
+  dias: 60
+  muestra: true
+
+equipo_muestra: true
+equipo:
+  - { nombre: Nombre Apellido, cargo: Dirección, foto: assets/equipo/equipo-1.jpg, bio: "Texto de ejemplo: quién dirige el club y por qué lo fundó." }
+  - { nombre: Nombre Apellido, cargo: Head coach, foto: assets/equipo/equipo-2.jpg, bio: "Texto de ejemplo: experiencia y cómo arma el plan de cada grupo." }
+  - { nombre: Nombre Apellido, cargo: Coach, foto: assets/equipo/equipo-3.jpg, bio: "Texto de ejemplo: en qué se especializa y a quién entrena." }
+
+resenas:
+  nota: "4,9"
+  cantidad: 120
+  muestra: true
+  lista:
+    - { nombre: Francisca M., detalle: "Jugadora · hace 1 mes", texto: "Reservar por WhatsApp es rapidísimo y las canchas están impecables." }
+    - { nombre: Diego A., detalle: "Socio · hace 3 semanas", texto: "Buen ambiente, siempre hay con quién armar partido en Chicureo." }
+    - { nombre: Catalina V., detalle: "Alumna · hace 2 meses", texto: "Partí desde cero con las clases y ya juego americanos con mi grupo." }
+
+precios:
+  grupos: [4, 2]
+  mensual: { 4: 49990, 2: 79990 }
+  anual:   { 4: 41990, 2: 66990 }
+  muestra: true
+
+# Colores tomados del logo
+paleta:
+  marca: "#032BE2"        # azul eléctrico del logo
+  oscuro: "#0A1445"       # azul noche
+  acento: "#D6F653"       # lima de la pelota
+  tono: "#8FA4F2"         # celeste del arco del logo
+  tono_oscuro: "#2A3FA8"
+  crema: "#F4F6FF"
+  fondo_claro: "#F8F9FF"
+
+textos:
+  footer:
+    reservas: Reservas
+  botones:
+    reservar: Reservar cancha
+
+estilo:
+  tipografia: impulso     # geométrica ancha en cursiva, como el logo
+  forma: redonda          # el círculo y la pelota del logo
+  hero: completo
+  etiquetas: barra        # "/01" acompaña la diagonal del logo
+  variante_textos: 3
+  secciones: [club, metodo, garantia, equipo, resenas, visita, cta]
+  menu: [club, metodo, precios, visita]
+  propuesta_inicial: marca
+  selector_propuestas: true
+  nombres_propuestas: { marca: "A · Azul", clara: "B · Blanco" }
