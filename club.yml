@@ -82,9 +82,9 @@ garantia:
 
 equipo_muestra: true
 equipo:
-  - { nombre: Nombre Apellido, cargo: Director, foto: assets/equipo/equipo-1.jpg, bio: "Texto de ejemplo: quién dirige el club y por qué lo fundó." }
+  - { nombre: Nombre Apellido, cargo: Dirección, foto: assets/equipo/equipo-1.jpg, bio: "Texto de ejemplo: quién dirige el club y por qué lo fundó." }
   - { nombre: Nombre Apellido, cargo: Head coach, foto: assets/equipo/equipo-2.jpg, bio: "Texto de ejemplo: experiencia y cómo arma el plan de cada grupo." }
-  - { nombre: Nombre Apellido, cargo: Entrenador, foto: assets/equipo/equipo-3.jpg, bio: "Texto de ejemplo: en qué se especializa y a quién entrena." }
+  - { nombre: Nombre Apellido, cargo: Coach, foto: assets/equipo/equipo-3.jpg, bio: "Texto de ejemplo: en qué se especializa y a quién entrena." }
 
 resenas:
   nota: "4,9"
@@ -120,7 +120,7 @@ textos:
 estilo:
   tipografia: impulso     # geométrica ancha en cursiva, como el logo
   forma: redonda          # el círculo y la pelota del logo
-  hero: dividido
+  hero: completo
   etiquetas: barra        # "/01" acompaña la diagonal del logo
   variante_textos: 3
   secciones: [club, metodo, garantia, equipo, resenas, visita, cta]

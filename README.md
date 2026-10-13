@@ -19,7 +19,7 @@ cd ../plantilla-padel && python3 build.py ../toppadel/club.yml
 
 - Colores: azul eléctrico `#032BE2`, lima de la pelota `#D6F653`, azul noche `#0A1445`, celeste del arco `#8FA4F2`
 - Tipografía `impulso`: Red Hat Display negra en cursiva (como el wordmark) + Plus Jakarta Sans
-- Forma `redonda` (el círculo y la pelota), héroe dividido, etiquetas "/01"
+- Forma `redonda` (el círculo y la pelota), héroe completo (video a pantalla completa), etiquetas "/01"
 - Propuesta A · Azul por defecto; B · Blanco disponible en el selector
 
 ## Pendiente: contenido de ejemplo (marcado en el sitio)
@@ -28,6 +28,6 @@ cd ../plantilla-padel && python3 build.py ../toppadel/club.yml
 - Número de canchas (dato del héroe)
 - Video del héroe, fotos de los pilares y de la garantía (videos comunes de la plantilla)
 - Nombre y detalles del método, garantía de 60 días
-- Equipo (nombres, cargos, fotos)
+- Equipo: nombres, cargos y bios (las fotos son las genéricas de la plantilla)
 - Reseñas y nota de Google
 - Precios

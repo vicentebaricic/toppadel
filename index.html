@@ -155,6 +155,7 @@ p{margin:0}
 .sample--dark{color:#F1C9A8}
 .hero__sample{position:absolute;z-index:2;left:16px;top:16px;background:rgba(0,0,0,.4)}
 .hero--completo .hero__sample{top:auto;left:auto;right:76px;bottom:22px}
+@media (max-width: 639px){.hero--completo .hero__sample{top:calc(var(--header-h) + 22px);bottom:auto;left:16px;right:auto}}
 
 /* Botones */
 .btn{
@@ -679,7 +680,7 @@ p{margin:0}
 <!-- =========================================================
      HEADER
      ========================================================= -->
-<header class="header">
+<header class="header is-over">
   <div class="wrap header__in">
     <a class="brand" href="#top" aria-label="Top Padel, ir al inicio">
       <span class="brand__logo"></span>
@@ -722,24 +723,7 @@ p{margin:0}
 <!-- =========================================================
      HÉROE
      ========================================================= -->
-<section class="hero hero--dividido" id="top" aria-label="Presentación">
-  <div class="wrap hero__grid">
-  <div class="hero__in">
-    <p class="eyebrow reveal" style="color:rgba(255,255,255,.75)"><b style="color:var(--ball)">Chicureo</b> Colina · Santiago</p>
-    <h1 class="reveal" data-delay="1">Más que canchas: <em>un club.</em></h1>
-    <p class="hero__sub reveal" data-delay="2">Aprende, juega y compite en un lugar donde todos se conocen por su nombre.</p>
-    <div class="hero__ctas reveal" data-delay="3">
-      <a class="btn btn--ball js-wa" data-wa="hero" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Hazte socio</a>
-      <a class="btn btn--ghost-light js-book" href="#">Reservar cancha</a>
-    </div>
-    <div class="hero__stat reveal" data-delay="3">
-      <strong>6</strong>
-      <span>canchas en<br>Chicureo</span>
-      <span class="sample sample--dark">Contenido de ejemplo</span>
-    </div>
-  </div>
-
-    <div class="hero__frame reveal" data-delay="1">
+<section class="hero hero--completo" id="top" aria-label="Presentación">
   <div class="hero__media">
     <picture>
       <source media="(max-aspect-ratio: 4/5)" srcset="assets/video/hero-mobile-poster.jpg">
@@ -755,8 +739,21 @@ p{margin:0}
     <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
   </button>
 
+  <div class="wrap hero__in">
+    <p class="eyebrow reveal" style="color:rgba(255,255,255,.75)"><b style="color:var(--ball)">Chicureo</b> Colina · Santiago</p>
+    <h1 class="reveal" data-delay="1">Más que canchas: <em>un club.</em></h1>
+    <p class="hero__sub reveal" data-delay="2">Aprende, juega y compite en un lugar donde todos se conocen por su nombre.</p>
+    <div class="hero__ctas reveal" data-delay="3">
+      <a class="btn btn--ball js-wa" data-wa="hero" href="#"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-wa"/></svg>Hazte socio</a>
+      <a class="btn btn--ghost-light js-book" href="#">Reservar cancha</a>
+    </div>
+    <div class="hero__stat reveal" data-delay="3">
+      <strong>6</strong>
+      <span>canchas en<br>Chicureo</span>
+      <span class="sample sample--dark">Contenido de ejemplo</span>
     </div>
   </div>
+
 </section>
 <!-- =========================================================
      EL CLUB · pilares (Entrena / Conecta / Compite)
@@ -912,9 +909,9 @@ p{margin:0}
     </div>
     <ul class="team">
       <li class="member reveal">
-        <div class="member__photo media" data-file="assets/equipo/equipo-1.jpg"><img src="assets/equipo/equipo-1.jpg" alt="Nombre Apellido, director" loading="lazy" width="640" height="800"><span class="initials" aria-hidden="true">NA</span></div>
+        <div class="member__photo media" data-file="assets/equipo/equipo-1.jpg"><img src="assets/equipo/equipo-1.jpg" alt="Nombre Apellido, dirección" loading="lazy" width="640" height="800"><span class="initials" aria-hidden="true">NA</span></div>
         <h3>Nombre Apellido</h3>
-        <p class="member__role">Director</p>
+        <p class="member__role">Dirección</p>
         <p>Texto de ejemplo: quién dirige el club y por qué lo fundó.</p>
       </li>
       <li class="member reveal" data-delay="1">
@@ -924,9 +921,9 @@ p{margin:0}
         <p>Texto de ejemplo: experiencia y cómo arma el plan de cada grupo.</p>
       </li>
       <li class="member reveal" data-delay="2">
-        <div class="member__photo media" data-file="assets/equipo/equipo-3.jpg"><img src="assets/equipo/equipo-3.jpg" alt="Nombre Apellido, entrenador" loading="lazy" width="640" height="800"><span class="initials" aria-hidden="true">NA</span></div>
+        <div class="member__photo media" data-file="assets/equipo/equipo-3.jpg"><img src="assets/equipo/equipo-3.jpg" alt="Nombre Apellido, coach" loading="lazy" width="640" height="800"><span class="initials" aria-hidden="true">NA</span></div>
         <h3>Nombre Apellido</h3>
-        <p class="member__role">Entrenador</p>
+        <p class="member__role">Coach</p>
         <p>Texto de ejemplo: en qué se especializa y a quién entrena.</p>
       </li>
     </ul>
